@@ -3,8 +3,10 @@
 Got bored and made a recursive Sudoku puzzle solver in deno.
 
 ```typescript
+import { solve } from "./sudoku.ts";
+
 // Enter the puzzle row by row with 0s for unknowns
-const solution = SudokuPuzzle.solve([
+const solution = solve([
   [3, 0, 0, 0, 0, 0, 0, 0, 0],
   [0, 6, 0, 0, 0, 0, 3, 8, 0],
   [8, 0, 0, 0, 7, 0, 0, 2, 0],
@@ -16,8 +18,8 @@ const solution = SudokuPuzzle.solve([
   [9, 0, 6, 7, 0, 0, 0, 0, 0],
 ]);
 
-// Result may be null if the puzzle is unsolvable
-console.log(result?.toString());
+// Sokution grid may be undefined if the puzzle is unsolvable
+console.log(solution.grid?.toString()));
 ```
 
 ## Algorithm
