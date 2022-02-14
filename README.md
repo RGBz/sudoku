@@ -18,7 +18,7 @@ const solution = solve([
   [9, 0, 6, 7, 0, 0, 0, 0, 0],
 ]);
 
-// Sokution grid may be undefined if the puzzle is unsolvable
+// Solution grid may be undefined if the puzzle is unsolvable
 console.log(solution.grid?.toString()));
 ```
 
